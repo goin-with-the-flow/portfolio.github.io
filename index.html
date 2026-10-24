@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urvi Singh | Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --accent-color: #3b82f6;
+            --background: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header / Banner */
+        header {
+            background: linear-gradient(135deg, #1e293b 0%, #2563eb 100%);
+            color: white;
+            padding: 4rem 1.5rem;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Grid for Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        /* Card Styling */
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.8rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-full {
+            grid-column: 1 / -1;
+        }
+
+        /* Tags / Pills */
+        .pill-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.8rem;
+        }
+
+        .pill {
+            background-color: #eff6ff;
+            color: var(--primary-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 1.2rem;
+            color: var(--text-dark);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Urvi Singh</h1>
+        <p>8th Grade Student | Avid Reader | Sports Enthusiast</p>
+    </header>
+
+    <div class="container">
+        <!-- About Me Section -->
+        <div class="card card-full">
+            <h2>👋 About Me</h2>
+            <p>Welcome to my personal site! I am Urvi Singh, an 8th-grade student with a passion for learning, public speaking, and sports. I believe in striving for excellence in academics while staying actively engaged in co-curricular activities and learning new skills.</p>
+        </div>
+
+        <div class="grid">
+            <!-- Academic Achievements -->
+            <div class="card">
+                <h2>🎓 Academics & Achievements</h2>
+                <ul>
+                    <li>Consistently scored <strong>85%+</strong> across all academic subjects.</li>
+                    <li>Competed in <strong>National Level Spell Bee</strong> competitions.</li>
+                    <li>Strong foundation in analytical thinking and problem-solving.</li>
+                </ul>
+            </div>
+
+            <!-- Communication & Languages -->
+            <div class="card">
+                <h2>🗣️ Languages & Skills</h2>
+                <p>Strong verbal and written communication skills with fluency in multiple languages:</p>
+                <div class="pill-group">
+                    <span class="pill">Hindi (Native)</span>
+                    <span class="pill">English (Fluent)</span>
+                    <span class="pill">French</span>
+                </div>
+            </div>
+
+            <!-- Sports & Hobbies -->
+            <div class="card">
+                <h2>🏀 Sports & Activities</h2>
+                <ul>
+                    <li><strong>Basketball:</strong> Active team player focusing on court strategy and coordination.</li>
+                    <li><strong>Cycling:</strong> Passionate about outdoor fitness and endurance.</li>
+                </ul>
+            </div>
+
+            <!-- Interests -->
+            <div class="card">
+                <h2>📚 Hobbies & Interests</h2>
+                <p>An avid reader with a love for exploring new concepts through literature, technology, and continuous self-improvement.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Urvi Singh • Hosted with GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
